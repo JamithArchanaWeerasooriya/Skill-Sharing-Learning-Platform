@@ -1,0 +1,26 @@
+/* Modern Navbar Component */
+.navbar-component {
+  background: #7C4585;
+  padding: 0 2.5rem;
+  height: 80px;
+  box-shadow: 0 4px 12px rgba(124, 69, 133, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(201, 87, 146, 0.2);
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,12 @@
+/* SideBar Styles - Scoped to only affect this component */
+.sideBarContainerNav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #210F37 0%, #1a0a2c 100%);
+}
+
+.sideBarNavbarWrapper {
+  flex-shrink: 0;
+}
+

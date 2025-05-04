@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320" height="80" viewBox="0 0 320 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- E -->
+  <path d="M10 15H50V25H20V35H45V45H20V55H50V65H10V15Z" fill="#E69DB8"/>
+  <!-- D -->
+  <path d="M55 15H75C85 15 95 25 95 40C95 55 85 65 75 65H55V15Z" fill="#E69DB8"/>
+  <path d="M75 55C80 55 85 50 85 40C85 30 80 25 75 25H65V55H75Z" fill="none" stroke="#E69DB8" stroke-width="2"/>
+  <!-- U -->
+  <path d="M100 15H110V40C110 50 115 65 130 65C145 65 150 50 150 40V15H160V40C160 55 145 75 130 75C115 75 100 55 100 40V15Z" fill="#E69DB8"/>
+  <!-- F -->
+  <path d="M165 15H205V25H175V35H195V45H175V65H165V15Z" fill="#E69DB8"/>
+  <!-- L -->
+  <path d="M210 15H220V55H240V65H210V15Z" fill="#E69DB8"/>
+  <!-- O -->
+  <path d="M245 40C245 25 255 15 270 15C285 15 295 25 295 40C295 55 285 65 270 65C255 65 245 55 245 40Z" fill="#E69DB8"/>
+  <path d="M270 55C280 55 285 50 285 40C285 30 280 25 270 25C260 25 255 30 255 40C255 50 260 55 270 55Z" fill="none" stroke="#E69DB8" stroke-width="2"/>
+  <!-- W -->
+  <path d="M300 15H310L315 40L325 15H335L345 40L350 15H360V65H350V40L340 65H330L320 40V65H310V15Z" fill="#E69DB8"/>
+  <!-- Flowing connection line -->
+  <path d="M50 40 Q70 45, 90 40 Q110 35, 130 40 Q150 45, 170 40 Q190 35, 210 40 Q230 45, 250 40 Q270 35, 290 40 Q310 45, 330 40" stroke="#E69DB8" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+</svg>
