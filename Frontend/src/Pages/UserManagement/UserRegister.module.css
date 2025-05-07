@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Container Styles */
+:root {
+  --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --primary-color: #7C4585;
+  --secondary-color: #C95792;
+  --text-color: #2D3748;
+  --light-bg: rgba(201, 87, 146, 0.1);
+  --border-color: rgba(201, 87, 146, 0.2);
+}
+
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #7C4585 0%, #C95792 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.authContainer::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  z-index: 0;
+}
+
+.authInnerContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(124, 69, 133, 0.2);
+  overflow: hidden;
+  min-height: 650px;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+}
+
+/* Hero Section */
+.authHero {
+  flex: 1;
+  position: relative;
+  display: none;
+  background: var(--primary-color);
+}
+
+.authHeroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80") center/cover no-repeat;
+  z-index: 1;
+}
+
+.authHero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(124, 69, 133, 0.85), rgba(201, 87, 146, 0.7));
+  z-index: 2;
+}
+
+/* Form Section */
+.authFormContainer {
+  flex: 1;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+}
+
+.authHeader {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.authTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+/* Form Elements */
+.authForm {
+  margin: 2rem 0;
+}
+
+.formGroup {
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  background: white;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(201, 87, 146, 0.1);
+}
+
+/* Skills Section */
+.skillsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  min-height: 36px;
+}
+
+.skillTag {
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.skillTag:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.skillInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.addSkillButton {
+  font-size: 1.5rem;
+  color: white;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 50%;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 4px rgba(124, 69, 133, 0.2);
+}
+
+.addSkillButton:hover {
+  background: var(--secondary-color);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(201, 87, 146, 0.3);
+}
+
+/* Button */
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 4px rgba(124, 69, 133, 0.2);
+}
+
+.submitButton:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(201, 87, 146, 0.3);
+}
+
+/* Footer Link */
+.authFooter {
+  text-align: center;
+  margin: 2rem 0 0;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.authLink {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.authLink:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .authHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3rem;
+    color: white;
+  }
+  
+  .authFormContainer {
+    flex: 0.55;
+  }
+}
+
+@media (max-width: 767px) {
+  .authContainer {
+    padding: 1rem;
+  }
+  
+  .authFormContainer {
+    padding: 2rem 1.5rem;
+  }
+  
+  .authTitle {
+    font-size: 1.6rem;
+  }
+}
