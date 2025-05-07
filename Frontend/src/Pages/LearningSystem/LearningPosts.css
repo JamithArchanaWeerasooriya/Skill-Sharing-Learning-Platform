@@ -1,0 +1,192 @@
+/* PostStyles.module.css */
+
+/* Modern Learning Posts Design */
+.container {
+  max-width: 1200px;
+  height: 628px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(33, 15, 55, 0.06);
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(230, 157, 184, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #210F37;
+  letter-spacing: -0.5px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #E69DB8;
+  color: #210F37;
+  padding: 0.875rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(230, 157, 184, 0.2);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(230, 157, 184, 0.3);
+  background: #d48ba6;
+}
+
+.button.secondary {
+  background-color: rgba(230, 157, 184, 0.1);
+  color: #210F37;
+  border: 2px solid rgba(230, 157, 184, 0.2);
+  box-shadow: none;
+}
+
+.button.secondary:hover {
+  background: rgba(230, 157, 184, 0.15);
+  border-color: rgba(230, 157, 184, 0.3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  border: 1px solid rgba(230, 157, 184, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(33, 15, 55, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(33, 15, 55, 0.1);
+  border-color: rgba(230, 157, 184, 0.3);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(230, 157, 184, 0.1);
+}
+
+.author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #E69DB8;
+  color: #210F37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(230, 157, 184, 0.2);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #210F37;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: rgba(230, 157, 184, 0.1);
+  color: #E69DB8;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(230, 157, 184, 0.2);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: rgba(230, 157, 184, 0.2);
+  transform: translateY(-1px);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(230, 157, 184, 0.1);
+}
+
+.likeButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6B7280;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.likeButton:hover {
+  background: rgba(230, 157, 184, 0.1);
+  color: #E69DB8;
+}
+
+.likeButton.liked {
+  color: #E69DB8;
+  background: rgba(230, 157, 184, 0.1);
+}
