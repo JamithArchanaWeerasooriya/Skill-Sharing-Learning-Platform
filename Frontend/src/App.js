@@ -42,6 +42,15 @@ function App() {
           <Route path="/register" element={<UserRegister />} />
 
           {/* Protected Routes */}
+
+          <Route
+            path="/addNewPost"
+            element={
+              <ProtectedRoute>
+                <AddNewPost />
+              </ProtectedRoute>
+            }
+          />
           
         </Routes>
       </React.Fragment>
