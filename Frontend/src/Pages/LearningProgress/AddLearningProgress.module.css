@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  padding-top: 80px; /* nav bar height */
+  padding-top: 60px; /* nav bar height */
 }
 
 .sidebarWrapper {
