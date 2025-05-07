@@ -1,13 +1,3 @@
-.container {
-  display: flex;
-  padding-top: 60px; /* nav bar height */
-}
-
-.sidebarWrapper {
-  width: 40px; /* side bar width */
-  flex-shrink: 0;
-}
-
 .contentSection {
   flex: 1;
   padding: 1.5rem 2rem;
