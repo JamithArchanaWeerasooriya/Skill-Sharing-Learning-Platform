@@ -1,0 +1,188 @@
+.container {
+  display: flex;
+  padding-top: 80px; /* nav bar height */
+}
+
+.sidebarWrapper {
+  width: 40px; /* side bar width */
+  flex-shrink: 0;
+}
+
+.contentSection {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  margin-left: 200px; /* side bar width */
+  min-height: calc(100vh - 80px);
+  background-color: #FFC6C6;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.actionButtonAdd {
+  background: linear-gradient(135deg, #7C4585, #5A3361);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(124, 69, 133, 0.3);
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1rem;
+}
+
+.actionButtonAdd:hover {
+  background: linear-gradient(135deg, #5A3361, #7C4585);
+}
+
+.actionButtonMy {
+  background: white;
+  border: 2px solid #7C4585;
+  border-radius: 12px;
+  color: #7C4585;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(124, 69, 133, 0.3);
+  margin-left: 1rem;
+  transition: background 0.3s ease;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1rem;
+}
+
+.actionButtonMy:hover {
+  background: #FFC6C6;
+}
+
+.postCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.notFoundBox {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(124, 69, 133, 0.25);
+}
+
+.notFoundMsg {
+  font-size: 1.2rem;
+  color: #7C4585;
+  margin: 1rem 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.notFoundBtn {
+  background: linear-gradient(135deg, #7C4585, #5A3361);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(124, 69, 133, 0.3);
+  transition: background 0.3s ease;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1rem;
+}
+
+.notFoundBtn:hover {
+  background: linear-gradient(135deg, #5A3361, #7C4585);
+}
+
+.postCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(124, 69, 133, 0.25);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.userDetailsCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nameSectionPost {
+  font-weight: bold;
+  color: #7C4585;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.actionBtnIconPost {
+  display: flex;
+  gap: 1rem;
+}
+
+.actionBtnIcon {
+  cursor: pointer;
+  color: #7C4585;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.actionBtnIcon:hover {
+  color: #5A3361;
+}
+
+.topicCont {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #7C4585;
+}
+
+.topicContB {
+  color: #7C4585;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.disCon {
+  margin-bottom: 1rem;
+}
+
+.disConTopic {
+  font-weight: bold;
+  color: #7C4585;
+  margin-bottom: 0.25rem;
+}
+
+.disConPera {
+  white-space: pre-line;
+  color: #7C4585;
+}
+
+.dateCard {
+  font-size: 0.9rem;
+  color: #7C4585;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-top: 70px; /* mobile nav bar height */
+  }
+  .sidebarWrapper {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .contentSection {
+    margin-left: 0;
+    padding: 1rem;
+    min-height: auto;
+  }
+}
